@@ -7,29 +7,16 @@ class TestCalc:
 
 # тест умножения
     def test_multiply_calculate_pass(self):
-        assert self.calc.multiply(1, 2) == 2
-
-    def test_multiply_calculate_fail(self):
-        assert self.calc.multiply(1, 2) == 1
+        assert self.calc.multiply(2, 2) == 4
 
 # тест деления
     def test_division_calculate_pass(self):
-        assert self.calc.division(2, 1) == 2
-
-    def test_division_calculate_fail(self):
-        assert self.calc.division(2, 1) == 1
+        assert self.calc.division(6, 3) == 2
 
 # тест вычитания
     def test_subtraction_calculation_pass(self):
-        assert self.calc.subtraction(2, 1) == 1
-
-    def test_subtraction_calculation_fail(self):
-        assert self.calc.subtraction(2, 1) == 2
+        assert self.calc.subtraction(8, 4) == 4
 
 # Тест сложения
-
     def test_adding_calculation_pass(self):
-        assert self.calc.adding(1, 1) == 2
-
-    def test_adding_calculation_fail(self):
-        assert self.calc.adding(1, 1) == 1
+        assert self.calc.adding(6, 2) == 8
